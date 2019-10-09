@@ -1,0 +1,19 @@
+{
+  "name": "chrome-magic-symbols",
+  "version": "1.0.0",
+  "description": "inserts Magic: The Gathering symbols to replace text codes",
+  "main": "processImages.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ash Brent-Carpenter",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "dependencies": {
+    "lodash.zipobject": "^4.1.3"
+  }
+}

@@ -1,0 +1,33 @@
+{
+	"name": "Magic Symbols",
+	"version": "1.0",
+	"description": "inserts Magic: The Gathering symbols to replace text codes",
+	"manifest_version": 2,
+
+	"permissions": [
+		"activeTab"
+	],
+
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*",
+				"file://*/*"
+			],
+			"exclude_matches": [],
+			"exclude_globs": [],
+			"js":
+			[
+				"lib/findAndReplaceDOMText.js",
+				"declarative-content/symbols-list.js",
+				"declarative-content/replaceSymbols.js"
+			],
+			"css": ["declarative-content/symbols.css"]
+		}
+	],
+
+	"web_accessible_resources": [
+		"manamoji-slack-master/emojis/*.png"
+	]
+}
